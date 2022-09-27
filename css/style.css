@@ -1,0 +1,77 @@
+body {
+	background-color: #FFF68D;
+	color: #2C3E50;
+	font-family: 'Raleway', "Century Gothic";
+	margin: 0px;
+	padding: 0px;
+}
+
+footer {
+	font-size: 13px;
+	font-family: "Century Gothic";
+	text-align: center;
+}
+
+#container { 
+	display: grid;
+	grid-template-columns: 5% auto 5%;
+}
+
+#logo {
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	background-image: url("../images/DW_Logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 300px;
+}
+
+hr {
+	border-bottom-color: #ebda0c;
+}
+
+nav {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+
+	display: grid;
+	grid-template-columns: 1fr repeat(3, fit-content(50px));
+	grid-gap: 10px;
+}
+
+nav ul a {
+	text-decoration: none;
+}
+
+footer {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#ourLink {
+	color: #F02489;
+	text-decoration: none;
+	padding: 2px 4px;
+	border-radius: 4px;
+	transition: background-color 0.5s, color 0.5s;
+
+}
+
+#ourLink:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.1) inset;
+	text-shadow: 0px 1px 0px #FFB6B6;
+	color: #FF2B58;
+}
+
+#license {
+	font-size: 6px;
+}
