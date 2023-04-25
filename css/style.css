@@ -114,3 +114,59 @@ nav a:focus {
 }
 
 /* end menu */
+
+/* buttons */
+
+.fandl .inepcx a {
+	display: block;
+	color: #fff;
+	margin: 5px;
+	padding: 15px;
+	background: #0c70de;
+	border-radius: 5px;
+	line-height: normal;
+}
+
+.fandl .inepcx a:hover {
+  background: #333;
+}
+
+.fandl .inepcx {
+  text-align: center;
+}
+
+.fandl .inepcx a span.epcur {
+  font-size: 20px;
+  margin-top: 6px;
+  font-weight: 700;
+}
+
+.fandl .inepcx a span {
+  display: block;
+  font-size: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .1s linear;
+  -moz-transition: color .1s linear;
+  -webkit-transition: color .1s linear;
+}
+
+.fandl {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.leftitm {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.rightitm {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
