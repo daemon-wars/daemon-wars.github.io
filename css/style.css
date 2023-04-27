@@ -155,9 +155,9 @@ a {
 }
 
 .fandl {
+	display: grid;
 	grid-column-start: 2;
 	grid-column-end: 3;
-	display: grid;
 	grid-template-columns: 50% 50%;
 }
 
@@ -169,4 +169,57 @@ a {
 .rightitm {
 	grid-column-start: 2;
 	grid-column-end: 2;
+}
+/* Listing chapters */
+#chapterlist {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#chapterlist ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  overflow: auto;
+  max-height: 295px;
+}
+
+#chapterlist ul li .chbox {
+	background: #222;
+  overflow: hidden;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  font-size: 16px;
+  margin: 0 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#chapterlist ul li .chbox:hover {
+  background: #333;
+}
+
+#chapterlist .clstyle li span.chapternum {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#chapterlist ul li .eph-num span.chapterdate {
+  font-size: 12px;
+  color: #888;
+}
+
+#chapterlist ul li .eph-num span {
+  display: block;
+}
+
+.eph-num a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.1) inset;
+	/* text-shadow: 0px 1px 0px #FFB6B6; */
+	color: #FF2B58;
 }
