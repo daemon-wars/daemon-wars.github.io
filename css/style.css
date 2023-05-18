@@ -329,7 +329,7 @@ a {
 /* chap list */
 
 .chap-cont {
-	display: flex;
+	text-align: center;
 	margin-top: 10px;
 }
 
