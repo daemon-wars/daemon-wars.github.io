@@ -323,6 +323,11 @@ a {
 
 /* chap list */
 
+.chap-cont {
+	display: flex;
+	margin-top: 10px;
+}
+
 #lazyScrollLoading_ImageMode {
 	list-style: none;
     margin: 0 auto;
