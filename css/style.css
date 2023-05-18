@@ -11,6 +11,11 @@ body {
 	padding: 0px;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 footer {
 	font-size: 13px;
 	font-family: "Century Gothic";
@@ -338,3 +343,4 @@ a {
 #lazyScrollLoading_ImageMode li{
 	margin-bottom: -1px;
 }
+
