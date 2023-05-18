@@ -32,6 +32,8 @@ footer {
 #container { 
 	display: grid;
 	grid-template-columns: 5% auto 5%;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 #logo {
