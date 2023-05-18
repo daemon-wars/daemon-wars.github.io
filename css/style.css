@@ -16,9 +16,12 @@ footer {
 	font-family: "Century Gothic";
 	text-align: center;
 
+	padding-top: 14px;
+}
+
+.center {
 	grid-column-start: 2;
 	grid-column-end: 3;
-	padding-top: 14px;
 }
 
 #container { 
@@ -316,4 +319,17 @@ a {
 
 .fa {
 	font-weight: 900;
+}
+
+/* chap list */
+
+#lazyScrollLoading_ImageMode {
+	list-style: none;
+    margin: 0 auto;
+    padding: 0;
+	font-size: 0;
+}
+
+#lazyScrollLoading_ImageMode li{
+	margin-bottom: -1px;
 }
