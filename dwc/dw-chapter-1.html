@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico"> <!-- replace -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico"> <!-- replace -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> -->
     <title>Daemon Wars Website</title>
@@ -15,10 +15,10 @@
 
       <hr />
       <nav class="cl-effect-11 nav-grid">
-        <a href="index.html" data-hover="Home" id="leftie">Home</a>
+        <a href="/index.html" data-hover="Home" id="leftie">Home</a>
         <a href="#" data-hover="Shop">Shop</a>
         <a href="#" data-hover="Boardgame">Boardgame</a>
-        <a href="webcomic.html" data-hover="Webcomic">Webcomic</a>
+        <a href="/webcomic.html" data-hover="Webcomic">Webcomic</a>
         <!-- <a href="#" data-hover="About">About</a> -->
         <!-- <a href="#" data-hover="Blog">Blog</a> -->
         <!-- <a href="#" data-hover="Contact">Contact</a> -->
@@ -28,7 +28,7 @@
       
       <div class="chnav ctop">
         <span class="selector slc l"> 
-          <select name="chapter" id="chapter" >
+          <select name="chapter" id="chapter" onChange="window.location.href=this.value" >
             <option value="" disabled="disabled">Select Chapter</option>
             <option data-id="000008" value="#">Chapter 8  </option>
             <option data-id="000007" value="#">Chapter 7  </option>
@@ -36,7 +36,7 @@
             <option data-id="000005" value="#">Chapter 5  </option>
             <option data-id="000004" value="#">Chapter 4  </option>
             <option data-id="000003" value="#">Chapter 3  </option>
-            <option data-id="000002" value="#">Chapter 2  </option>
+            <option data-id="000002" value="dwc/dw-chapter-2.html">Chapter 2  </option>
             <option data-id="000001" value="#" selected="selected">Chapter 1  </option>
           </select>
         </span>
@@ -56,11 +56,11 @@
       </div>
       <div class="chap-cont center">
         <ul id="lazyScrollLoading_ImageMode">
-          <li><img loading="lazy" src="chapters/dw-001/Ch01_P00.jpg" alt="Image1" /></li>
-          <li><img loading="lazy" src="chapters/dw-001/Ch01_P01.jpg" alt="Image2" /></li>
-          <li><img loading="lazy" src="chapters/dw-001/Ch01_P02.jpg" alt="Image3" /></li>
-          <li><img loading="lazy" src="chapters/dw-001/Ch01_P03.jpg" alt="Image4" /></li>
-          <li><img loading="lazy" src="chapters/dw-001/Ch01_P04.jpg" alt="Image5" /></li>
+          <li><img loading="lazy" src="../chapters/dw-001/Ch01_P00.jpg" alt="Image1" /></li>
+          <li><img loading="lazy" src="../chapters/dw-001/Ch01_P01.jpg" alt="Image2" /></li>
+          <li><img loading="lazy" src="../chapters/dw-001/Ch01_P02.jpg" alt="Image3" /></li>
+          <li><img loading="lazy" src="../chapters/dw-001/Ch01_P03.jpg" alt="Image4" /></li>
+          <li><img loading="lazy" src="../chapters/dw-001/Ch01_P04.jpg" alt="Image5" /></li>
         </ul>
       </div>
 
