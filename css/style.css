@@ -322,7 +322,7 @@ a {
   border-radius: 20px;
   color: #fff;
   font-size: 13px;
-  background: #0c70de;
+  background: var(--thumbBG);
   line-height: 25px;
 }
 
