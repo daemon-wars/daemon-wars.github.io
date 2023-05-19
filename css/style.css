@@ -1,6 +1,7 @@
 html {
   --scrollbarBG: #CFD8DC;
   --thumbBG: #0c70de;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
 	font-family: 'Raleway', "Century Gothic";
 	margin: 0px;
 	padding: 0px;
+	scroll-behavior: smooth;
 }
 
 img {
@@ -21,7 +23,7 @@ footer {
 	font-family: "Century Gothic";
 	text-align: center;
 
-	padding-top: 14px;
+	padding-top: 50px;
 }
 
 .center {
@@ -346,4 +348,41 @@ a {
 #lazyScrollLoading_ImageMode li{
 	margin-bottom: -1px;
 }
+/* back to top */
+.container-top {
+  /* --offset: 100px; */
+  /* --fade: 80px; */
+  
+  display: flex;
+  align-items: flex-end;
+  width: 60px;
+  justify-self: end;
+  justify-content: flex-end;
+  /* -webkit-mask:linear-gradient(#0000 calc(100vh + var(--offset)),#000 calc(100vh + var(--offset) + var(--fade))); */
+}
 
+#btn-top {
+  /* position: sticky; */
+  position: fixed;
+  bottom: 20px;      
+  margin-right:10px; 
+  
+  /* visual styling */
+  /* width:100%; */
+  padding: 25px;
+  aspect-ratio:1;
+  background:#ff8b24;
+  border-radius:10px;
+  display: none;
+}
+#btn-top:hover {
+	background-color: var(--thumbBG);
+}
+#btn-top:before {
+  content:"";
+  position:absolute;
+  inset:30%;
+  transform:translateY(20%) rotate(-45deg);
+  border-top:5px solid #fff;
+  border-right:5px solid #fff;
+}
