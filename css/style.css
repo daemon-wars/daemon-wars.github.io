@@ -13,6 +13,10 @@ body {
 	scroll-behavior: smooth;
 }
 
+#dtheme {
+	background-color: #222;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -23,7 +27,7 @@ footer {
 	font-family: "Century Gothic";
 	text-align: center;
 
-	padding-top: 50px;
+	padding: 50px 0;	
 }
 
 .center {
@@ -49,8 +53,27 @@ footer {
 	height: 300px;
 }
 
+#logo2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	background-image: url("../images/Logo_OnDark.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 300px;
+}
+
 hr {
 	border-bottom-color: #ebda0c;
+}
+
+.dhr {
+	border-bottom-color: #5b1b8b;
+}
+
+.dtext {
+	color: #587da3;
 }
 
 nav {
@@ -71,6 +94,21 @@ nav {
 	background-color: rgba(0, 0, 0, 0.1);
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.1) inset;
 	text-shadow: 0px 1px 0px #FFB6B6;
+	color: #FF2B58;
+}
+
+#ourDarkLink {
+	color: #F02489;
+	text-decoration: none;
+	padding: 2px 4px;
+	border-radius: 4px;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+#ourDarkLink:hover {
+	background-color: rgb(114 114 114 / 11%);
+    box-shadow: 0px 0px 3px rgb(255 252 252 / 10%) inset;
+	text-shadow: 0px 1px 0px #9d3333;
 	color: #FF2B58;
 }
 
@@ -113,6 +151,10 @@ nav a:focus {
 	outline: none;
 }
 
+.dmenu a {
+	text-shadow: 0 0 1px #fff;
+}
+
 .cl-effect-11 a::before {
 	position: absolute;
 	top: 0;
@@ -124,6 +166,10 @@ nav a:focus {
 	-webkit-transition: max-height 0.5s;
 	-moz-transition: max-height 0.5s;
 	transition: max-height 0.5s;
+}
+
+.dmenu a::before {
+	color: #fff;
 }
 
 .cl-effect-11 a:hover::before,
